@@ -13,8 +13,6 @@
 
 ## 🎨 Hero Banner
 
-![Neuron Platform Banner](./docs/banner.png)
-
 ---
 
 ## 🌐 Live Demo
@@ -96,13 +94,13 @@ graph TD
     end
 
     subgraph Shared Libraries
-        api-client[lib/api-client-react]
-        db[lib/db - Drizzle ORM]
-        api-zod[lib/api-zod - Schemas]
+        apiClient["lib/api-client-react"]
+        db["lib/db - Drizzle ORM"]
+        apiZod["lib/api-zod - Schemas"]
     end
 
-    PriceDisplay -.--> api-client
-    App -.--> api-client
+    PriceDisplay -.-> apiClient
+    App -.-> apiClient
 ```
 
 ---
