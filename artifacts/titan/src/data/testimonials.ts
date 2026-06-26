@@ -9,23 +9,23 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: "1",
-    quote: "Neuron has completely transformed how our data engineering team operates. We're processing 10x more data with half the infrastructure overhead.",
+    quote: "We cut pipeline provisioning time from three weeks to two days. The compliance automation alone saved our SOC 2 audit by six months.",
     author: "Sarah Chen",
-    role: "VP of Engineering",
-    company: "Acme Corp"
+    role: "VP Engineering",
+    company: "Acme Corp",
   },
   {
     id: "2",
-    quote: "The zero-latency query engine isn't just marketing speak. It actually delivers sub-50ms responses on our heaviest analytical queries.",
-    author: "Michael Rodriguez",
+    quote: "Sub-50ms on billion-row queries isn't marketing. We benchmarked it against three alternatives. Neuron won every time.",
+    author: "Marcus Rodriguez",
     role: "Chief Data Officer",
-    company: "Nexus Financial"
+    company: "Nexus Financial",
   },
   {
     id: "3",
-    quote: "Automated compliance saved us months of engineering time during our SOC 2 audit. It's the kind of tool you deploy and it just works.",
-    author: "Emily Taylor",
+    quote: "Finally a data platform that engineering teams actually want to use. Our internal adoption went from 40% to 94% in a quarter.",
+    author: "Emily Park",
     role: "Director of Infrastructure",
-    company: "HealthSync"
-  }
+    company: "HealthSync",
+  },
 ];

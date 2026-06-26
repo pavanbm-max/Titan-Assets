@@ -1,0 +1,273 @@
+You are now entering FINAL UI REFINEMENT MODE.
+
+IMPORTANT:
+This is NOT a redesign.
+This is NOT a rewrite.
+This is NOT a refactor.
+
+The engineering architecture, pricing logic, state management, responsiveness, SEO, accessibility, animations, performance, and component structure are already complete.
+
+DO NOT modify:
+- Business logic
+- Folder structure
+- Component hierarchy
+- Pricing engine
+- Currency calculations
+- Billing toggle
+- Bento → Accordion functionality
+- State persistence
+- Render isolation
+- Accessibility
+- SEO
+- Responsive behavior
+- Performance optimizations
+- Existing animations unless visually improving them
+
+Your ONLY objective is to elevate the visual design into something that feels handcrafted by an experienced product designer rather than AI-generated.
+
+## DESIGN PHILOSOPHY
+
+Adopt a "Less is More" approach.
+
+The interface should feel:
+
+• Premium
+• Elegant
+• Calm
+• Modern
+• Professional
+• Minimal
+• Sophisticated
+• Confident
+• Timeless
+
+Avoid flashy effects and visual noise.
+
+Do NOT make it futuristic for the sake of looking futuristic.
+
+The product should feel like a real enterprise SaaS product that people would trust.
+
+The overall quality should be comparable to premium enterprise software while remaining completely original.
+
+## REMOVE THE "AI GENERATED" LOOK
+
+Avoid common AI-generated design patterns such as:
+
+• Perfect symmetry everywhere
+• Oversized empty cards
+• Excessive gradients
+• Heavy glowing borders
+• Overly bright buttons
+• Generic SaaS marketing layouts
+• Excessive animations
+• Repetitive spacing
+• Large empty sections
+• Template-looking components
+
+Every section should feel intentionally designed.
+
+## HERO
+
+Do not redesign the layout.
+
+Improve only the visual quality.
+
+Refine:
+
+• Typography hierarchy
+• Better whitespace
+• Better alignment
+• Better spacing rhythm
+• Softer lighting
+• Subtle radial background glow
+• More premium dashboard presentation
+• Better CTA hierarchy
+• Cleaner visual balance
+
+The hero should immediately communicate quality without relying on excessive effects.
+
+## DASHBOARD
+
+Keep the existing dashboard.
+
+Make it feel more like a real application.
+
+Add subtle realistic UI details such as:
+
+• Status indicators
+• Activity
+• Tiny charts
+• Progress
+• Pipeline states
+• Better shadows
+• Better depth
+
+Animations should remain subtle and performance friendly.
+
+## FEATURE / BENTO SECTION
+
+Keep the existing layout.
+
+Do not redesign the grid.
+
+Instead improve the content inside the cards.
+
+Reduce empty space.
+
+Introduce believable product UI elements:
+
+• Workflow diagrams
+• Pipeline nodes
+• Status chips
+• Tiny charts
+• Metrics
+• Small graphs
+• Connection lines
+• Technical indicators
+
+Each card should tell a small story instead of looking like a generic feature card.
+
+## PRICING
+
+Keep the pricing architecture.
+
+Keep all calculations.
+
+Improve only the presentation.
+
+Reduce unnecessary glow.
+
+Use cleaner spacing.
+
+Increase readability.
+
+The featured plan should stand out naturally through typography, spacing, and subtle emphasis instead of excessive visual effects.
+
+## TESTIMONIALS
+
+Keep the layout.
+
+Improve hierarchy.
+
+Use shorter, more believable testimonials.
+
+Improve avatar styling.
+
+Improve spacing.
+
+Increase authenticity.
+
+## CTA
+
+Avoid making it a copy of the Hero.
+
+Create a calm, premium call-to-action section.
+
+Use restrained lighting.
+
+Simple typography.
+
+Clear CTA.
+
+Strong whitespace.
+
+## FOOTER
+
+Increase whitespace.
+
+Improve alignment.
+
+Refine typography.
+
+Improve hover states.
+
+Create a cleaner professional finish.
+
+## VISUAL LANGUAGE
+
+Reduce visual noise.
+
+Reduce glow intensity.
+
+Reduce border intensity.
+
+Increase whitespace.
+
+Use shadows sparingly.
+
+Use accent colors only where they guide attention.
+
+Create multiple depth levels instead of making every card identical.
+
+Introduce subtle layering.
+
+Everything should feel cohesive.
+
+## TYPOGRAPHY
+
+Improve hierarchy.
+
+Use fewer font sizes.
+
+Increase readability.
+
+Increase spacing between headings and paragraphs.
+
+Avoid oversized marketing text.
+
+## BUTTONS
+
+Improve only the polish.
+
+Better hover.
+
+Better press state.
+
+Cleaner shadows.
+
+Subtle transitions.
+
+Avoid oversized glows.
+
+## ANIMATIONS
+
+Keep all existing animation timings.
+
+Do not introduce excessive movement.
+
+Animations should feel elegant, purposeful, and nearly invisible.
+
+Only animate where it improves usability.
+
+## PERFORMANCE
+
+Do not reduce Lighthouse scores.
+
+Do not increase bundle size unnecessarily.
+
+Do not add new dependencies.
+
+Do not use forbidden libraries.
+
+Keep GPU-friendly CSS animations only.
+
+## FINAL GOAL
+
+The finished interface should make a judge think:
+
+"This looks like it was crafted by an experienced product designer."
+
+NOT
+
+"This looks AI-generated."
+
+The result should be:
+
+Simple.
+Elegant.
+Aesthetic.
+Minimal.
+Premium.
+Production-ready.
+
+Before finishing, review every section and remove anything that feels template-like, repetitive, or obviously AI-generated while preserving the existing architecture and all competition requirements.

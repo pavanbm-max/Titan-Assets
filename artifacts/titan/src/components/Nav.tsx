@@ -4,45 +4,79 @@ export function Nav() {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
-    <header 
+    <header
       role="banner"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled 
-          ? 'bg-bg-base/80 backdrop-blur-md border-b border-border-default shadow-[0_4px_30px_rgba(0,0,0,0.5)]' 
-          : 'bg-transparent border-b border-transparent'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+      style={scrolled ? {
+        background: 'rgba(9,9,15,0.88)',
+        backdropFilter: 'blur(16px)',
+        WebkitBackdropFilter: 'blur(16px)',
+        borderBottom: '1px solid rgba(255,255,255,0.06)',
+        boxShadow: '0 4px 24px rgba(0,0,0,0.4)',
+      } : {
+        background: 'transparent',
+        borderBottom: '1px solid transparent',
+      }}
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 rounded-full bg-brand-primary animate-pulse-dot" />
-          <span className="text-xl font-bold tracking-tight text-text-primary">Neuron</span>
-        </div>
+      {/* Skip link */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-4 px-3 py-1.5 bg-brand-primary text-white text-xs rounded focus-ring"
+      >
+        Skip to main content
+      </a>
 
-        <nav aria-label="Main navigation" className="hidden md:flex items-center gap-8">
-          {['Features', 'Pricing', 'Customers', 'Docs'].map(item => (
-            <a 
-              key={item} 
-              href={`#${item.toLowerCase()}`}
-              className="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors focus-ring rounded"
+      <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
+
+        {/* Logo */}
+        <a href="/" className="flex items-center gap-2 focus-ring rounded" aria-label="Neuron home">
+          <div className="w-5 h-5 rounded-md flex items-center justify-center relative"
+            style={{ background: 'linear-gradient(140deg, #6366F1 0%, #4F46E5 100%)' }}>
+            <div className="w-2 h-2 rounded-sm bg-white/75" />
+            <div
+              className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full bg-brand-accent animate-pulse-dot"
+              style={{ boxShadow: '0 0 6px rgba(16,185,129,0.6)' }}
+            />
+          </div>
+          <span className="text-sm font-bold tracking-tight text-text-primary">Neuron</span>
+        </a>
+
+        {/* Nav */}
+        <nav aria-label="Main navigation" className="hidden md:flex items-center gap-1">
+          {[
+            { label: 'Features',   href: '#features' },
+            { label: 'Pricing',    href: '#pricing' },
+            { label: 'Customers',  href: '#customers' },
+            { label: 'Docs',       href: '#docs' },
+          ].map(({ label, href }) => (
+            <a
+              key={label}
+              href={href}
+              className="px-3 py-1.5 text-sm text-text-secondary hover:text-text-primary rounded-lg hover:bg-white/[0.04] transition-all duration-150 focus-ring"
             >
-              {item}
+              {label}
             </a>
           ))}
         </nav>
 
-        <div className="flex items-center gap-4">
-          <a href="#signin" className="hidden sm:block text-sm font-medium text-text-secondary hover:text-text-primary transition-colors focus-ring rounded">
+        {/* Actions */}
+        <div className="flex items-center gap-3">
+          <a
+            href="#signin"
+            className="hidden sm:block text-sm text-text-secondary hover:text-text-primary transition-colors duration-150 focus-ring rounded px-2 py-1.5"
+          >
             Sign in
           </a>
-          <a 
+          <a
             href="#freetrial"
-            className="px-4 py-2 text-sm font-medium bg-brand-primary text-white rounded-md hover:bg-indigo-600 transition-colors focus-ring shadow-[0_0_20px_rgba(99,102,241,0.3)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)]"
+            className="px-4 py-1.5 text-sm font-semibold text-white rounded-lg bg-brand-primary hover:bg-indigo-500 active:scale-[0.97] transition-all duration-150 focus-ring"
+            style={{ boxShadow: '0 1px 8px rgba(99,102,241,0.3)' }}
           >
             Start free trial
           </a>
