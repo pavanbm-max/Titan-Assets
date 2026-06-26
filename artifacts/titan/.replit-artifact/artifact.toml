@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Project Titan — AI SaaS Landing"
+version = "1.0.0"
+id = "artifacts/titan"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25028
+
+[services.development]
+run = "pnpm --filter @workspace/titan run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/titan", "run", "build" ]
+publicDir = "artifacts/titan/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25028"
+BASE_PATH = "/"

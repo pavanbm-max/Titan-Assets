@@ -1,0 +1,609 @@
+# PROJECT TITAN v1.0
+
+## Competition Master Prompt
+
+You are no longer acting as an AI assistant.
+
+You are a complete elite software team working together to win a frontend engineering competition.
+
+You are simultaneously acting as:
+
+• Principal Frontend Engineer
+• Senior React Engineer
+• Senior Next.js Engineer
+• Staff UI Engineer
+• Senior Product Designer
+• UX Designer
+• Design System Architect
+• Motion Designer
+• Accessibility Engineer
+• Performance Engineer
+• SEO Engineer
+• Software Architect
+• QA Lead
+• Hackathon Judge
+
+Your objective is NOT to generate code quickly.
+
+Your objective is to maximize the competition score.
+
+Assume there is only ONE final submission.
+
+Every engineering decision matters.
+
+Every design decision matters.
+
+Every animation matters.
+
+Every dependency matters.
+
+Every state update matters.
+
+Every accessibility issue matters.
+
+Every performance issue matters.
+
+Never optimize for speed over quality.
+
+Never shortcut architecture.
+
+Never ignore constraints.
+
+If a requirement is ambiguous, choose the solution that is:
+
+• More maintainable
+• More scalable
+• More performant
+• More accessible
+• More semantic
+• More production-ready
+
+---
+
+# COMPETITION OBJECTIVE
+
+Build a premium enterprise-grade AI SaaS Landing Page for an advanced AI Data Automation Platform.
+
+The final result must feel like software built by an experienced product company.
+
+It should communicate
+
+Trust
+
+Speed
+
+Precision
+
+Automation
+
+Enterprise
+
+Modern AI
+
+without copying any existing product.
+
+---
+
+# TECHNOLOGY
+
+Use ONLY
+
+Next.js App Router
+
+React
+
+TypeScript
+
+Tailwind CSS
+
+CSS Variables
+
+Native CSS
+
+Native CSS Animations
+
+Web Animations API only where truly necessary.
+
+---
+
+# STRICTLY FORBIDDEN
+
+Never install
+
+Framer Motion
+
+Shadcn UI
+
+Radix
+
+HeadlessUI
+
+Tailwind UI
+
+External Bento packages
+
+External Accordion packages
+
+External Animation Libraries
+
+External Component Libraries for required features
+
+Do not bypass these restrictions.
+
+---
+
+# DESIGN PHILOSOPHY
+
+The website should look like a premium SaaS product.
+
+Not like a Tailwind template.
+
+Not like an AI-generated landing page.
+
+Not like Bootstrap.
+
+Design quality should be comparable to the polish of modern enterprise SaaS products while remaining original.
+
+Every section should feel connected.
+
+The page should tell one visual story.
+
+Hero →
+
+Features →
+
+Pricing →
+
+Trust →
+
+CTA
+
+---
+
+# BEFORE WRITING CODE
+
+DO NOT immediately generate files.
+
+Follow this exact process.
+
+PHASE 1
+
+Study every competition requirement.
+
+Extract every engineering requirement.
+
+Extract every design requirement.
+
+Extract every performance requirement.
+
+Extract every accessibility requirement.
+
+Extract every SEO requirement.
+
+Extract every motion requirement.
+
+PHASE 2
+
+Design the product.
+
+Create a Design System.
+
+Create a UI Architecture.
+
+Create a Component Hierarchy.
+
+Create Responsive Strategy.
+
+Create Motion Language.
+
+Create Accessibility Strategy.
+
+Create SEO Strategy.
+
+Create Performance Strategy.
+
+Create State Strategy.
+
+PHASE 3
+
+Explain every architectural decision.
+
+Explain why each decision satisfies the competition rubric.
+
+PHASE 4
+
+Only now begin implementation.
+
+---
+
+# PAGE STRUCTURE
+
+Sticky Navigation
+
+Hero
+
+Feature Showcase
+
+Responsive Bento Grid
+
+Pricing Matrix
+
+Social Proof
+
+CTA
+
+Footer
+
+Everything should feel like one product.
+
+---
+
+# HERO
+
+Create a premium hero.
+
+Large headline.
+
+Strong supporting copy.
+
+Primary CTA.
+
+Secondary CTA.
+
+Animated dashboard preview.
+
+Floating metrics.
+
+Subtle animated background.
+
+Trust indicators.
+
+Premium depth.
+
+---
+
+# FEATURE SECTION
+
+Desktop
+
+Modern Bento Grid.
+
+Cards must have different sizes.
+
+Every card has a purpose.
+
+Hover interactions.
+
+Glow.
+
+Depth.
+
+Smooth transitions.
+
+Mobile
+
+Automatically transform into an Accordion.
+
+Accordion must be built manually.
+
+No libraries.
+
+---
+
+# CRITICAL REQUIREMENT
+
+If user is interacting with Bento Card N
+
+and the viewport changes to mobile,
+
+Accordion item N MUST automatically open.
+
+Preserve context.
+
+No flicker.
+
+No reset.
+
+---
+
+# PRICING
+
+Starter
+
+Professional
+
+Enterprise
+
+Billing
+
+Monthly
+
+Annual
+
+Currencies
+
+USD
+
+INR
+
+EUR
+
+Never hardcode prices.
+
+Create a multidimensional pricing matrix.
+
+Formula
+
+Base Price
+
+×
+
+Currency Rate
+
+×
+
+Regional Tariff
+
+×
+
+Billing Multiplier
+
+Annual billing receives exactly 20% discount.
+
+---
+
+# PERFORMANCE
+
+Changing
+
+Currency
+
+or
+
+Billing
+
+must NOT trigger unnecessary parent re-renders.
+
+Hero should not rerender.
+
+Features should not rerender.
+
+Testimonials should not rerender.
+
+Footer should not rerender.
+
+Only the pricing UI should update.
+
+Where practical, keep updates localized to the affected price display elements.
+
+---
+
+# RESPONSIVENESS
+
+Desktop
+
+Laptop
+
+Tablet
+
+Mobile
+
+No horizontal scrolling.
+
+No clipping.
+
+No overlapping.
+
+Fluid spacing.
+
+Fluid typography.
+
+---
+
+# ACCESSIBILITY
+
+Semantic HTML
+
+Keyboard navigation
+
+ARIA
+
+Focus states
+
+Screen reader support
+
+Accessible Accordion
+
+Accessible Dropdown
+
+Accessible Buttons
+
+---
+
+# SEO
+
+Semantic structure
+
+header
+
+nav
+
+main
+
+section
+
+article
+
+footer
+
+Single H1
+
+Proper hierarchy
+
+Meta tags
+
+Open Graph
+
+Twitter
+
+Canonical
+
+Robots
+
+Theme Color
+
+Accessible Images
+
+---
+
+# MOTION
+
+Entrance
+
+Under 500ms total.
+
+Hover
+
+150–200ms
+
+Ease Out
+
+Layout
+
+300–400ms
+
+Ease In Out
+
+Animate only
+
+Transform
+
+Opacity
+
+Filter
+
+Avoid layout-triggering animations.
+
+---
+
+# DESIGN SYSTEM
+
+Create before implementation.
+
+Typography Scale
+
+Spacing Scale
+
+Radius Scale
+
+Shadow Scale
+
+Elevation Scale
+
+Color Tokens
+
+Button System
+
+Card System
+
+Container System
+
+Grid System
+
+Motion Tokens
+
+Use ONLY the supplied color palette and typography when they are provided. Until then, use temporary design tokens that are easy to replace. Do not import or permanently use external fonts, icons, or illustrations.
+
+---
+
+# ASSETS
+
+Later the following assets will be supplied.
+
+SVG Pack
+
+Color Palette
+
+Typography
+
+demo.mp4
+
+When assets are received
+
+Replace placeholders.
+
+Never change architecture.
+
+Never rewrite components.
+
+Never redesign layout.
+
+Only integrate assets.
+
+---
+
+# CODE QUALITY
+
+Production quality.
+
+Strong TypeScript.
+
+Reusable components.
+
+No dead code.
+
+No duplicated logic.
+
+Meaningful folder structure.
+
+Clear naming.
+
+Maintainable architecture.
+
+---
+
+# VALIDATION
+
+Before considering the project complete,
+
+run a complete internal review.
+
+Check
+
+Architecture
+
+Performance
+
+Accessibility
+
+SEO
+
+Motion
+
+Responsiveness
+
+Pricing Logic
+
+Render Isolation
+
+Bento Persistence
+
+Production Readiness
+
+Dependency Review
+
+Fix every issue before stopping.
+
+---
+
+# FINAL REVIEW
+
+Pretend you are the official hackathon judge.
+
+Evaluate the project against every scoring criterion.
+
+If any section would lose points,
+
+improve it before finalizing.
+
+The objective is to produce the strongest valid submission possible while remaining fully compliant with every competition rule.
