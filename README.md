@@ -11,54 +11,23 @@
 
 ---
 
-## 📖 Table of Contents
-
-- [Hero Banner](#hero-banner)
-- [Live Demo](#live-demo)
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Screenshots](#screenshots)
-- [Architecture](#architecture)
-- [Project Flow](#project-flow)
-- [Folder Structure](#folder-structure)
-- [Technology Stack](#technology-stack)
-- [Engineering Decisions](#engineering-decisions)
-- [Pricing Logic](#pricing-logic)
-- [Responsive Design](#responsive-design)
-- [Accessibility (a11y)](#accessibility-a11y)
-- [SEO Optimization](#seo-optimization)
-- [Performance Optimization](#performance-optimization)
-- [Installation & Local Setup](#installation--local-setup)
-- [Configuration](#configuration)
-- [Project Highlights](#project-highlights)
-- [Future Roadmap](#future-roadmap)
-- [License](#license)
-- [Author](#author)
-- [Acknowledgements](#acknowledgements)
-
----
-
 ## 🎨 Hero Banner
 
-```md
 ![Neuron Platform Banner](./docs/banner.png)
-```
-> [!NOTE]
-> *Note: If this banner asset does not exist in your repository yet, please add a descriptive banner at `./docs/banner.png` representing the dashboard's design system.*
 
 ---
 
 ## 🌐 Live Demo
 
-* **Live Website URL**: *[Placeholder: Add deployment URL here, e.g. Vercel / Netlify]*
+* **Live Website URL**: [https://titan-assets-titan.vercel.app](https://titan-assets-titan.vercel.app) *(or your deployed Vercel URL)*
 * **GitHub Repository**: [pavanbm-max/Titan-Assets](https://github.com/pavanbm-max/Titan-Assets.git)
-* **Demo Video walkthrough**: *[Placeholder: Add YouTube/Loom demo video link]*
+* **Demo Video**: *[Placeholder: Add YouTube/Loom demo video link]*
 
 ---
 
 ## 🔍 Overview
 
-Neuron addresses a critical engineering problem: the overhead of building, monitoring, and scaling data pipelines while maintaining rigorous enterprise security compliance (SOC 2, GDPR, HIPAA). 
+Neuron addresses a critical engineering problem: the overhead of building, monitoring, and scaling data pipelines while maintaining strict enterprise security compliance (SOC 2, GDPR, HIPAA). 
 
 As a solution, **Neuron** serves as an enterprise-grade AI SaaS Landing Page showcasing an advanced data automation system. It targets data engineers, tech architects, and VP engineering managers by proposing a single cohesive workspace that connects over 200+ data sources, automates pipeline transforms, and executes sub-50ms queries over billion-row databases.
 
@@ -94,11 +63,11 @@ As a solution, **Neuron** serves as an enterprise-grade AI SaaS Landing Page sho
 
 | Desktop Bento Grid | Dynamic Pricing Matrix |
 | :---: | :---: |
-| `![Bento Grid](./docs/screenshots/bento.png)` | `![Pricing Table](./docs/screenshots/pricing.png)` |
+| ![Bento Grid](./docs/screenshots/bento.png) | ![Pricing Table](./docs/screenshots/pricing.png) |
 
 | Mobile Accordion View | Desktop Dashboard Mockup |
 | :---: | :---: |
-| `![Mobile Accordion](./docs/screenshots/accordion.png)` | `![Dashboard Visual](./docs/screenshots/dashboard.png)` |
+| ![Mobile Accordion](./docs/screenshots/accordion.png) | ![Dashboard Visual](./docs/screenshots/dashboard.png) |
 
 ---
 
@@ -132,8 +101,8 @@ graph TD
         api-zod[lib/api-zod - Schemas]
     end
 
-    PriceDisplay -.-> api-client
-    App -.-> api-client
+    PriceDisplay -.--> api-client
+    App -.--> api-client
 ```
 
 ---
@@ -268,7 +237,6 @@ Metadata tags are optimized for search engines and web crawlers:
    ```
 
 2. **Install Workspace Dependencies**:
-   Install all package trees without running preinstall lifecycle scripts:
    ```bash
    pnpm install --ignore-scripts
    ```
